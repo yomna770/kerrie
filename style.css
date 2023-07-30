@@ -1,0 +1,523 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior:smooth;
+}
+*::selection{
+    background-color: #000;
+    color: white;
+}
+ header ul:visited{
+    color: #e65f78;
+}
+#home{
+     height: 100vh;
+     min-width: 100vh;
+    background-image: url(img/home-bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+.homebg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    left: 50%;    
+    transform: translateX(-50%);
+    padding-top: 20px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+ul span{
+    color: rgb(230, 95, 120);
+}
+ ul li , a{
+    display: inline;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    transition: all .5s ease-in-out;
+}
+ ul li a:hover{
+    color: rgb(230, 95, 120);
+}
+.logo{
+    width: 81px;
+    height: 31px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.setting{
+    top: 25%;
+    position: fixed;
+    left: 0;
+    background-color: #e65f78;
+    width: 28px;
+    height: 40px;
+    text-align: center;
+    border-radius: .25rem;
+    color: white;}
+.setting i{
+ text-align: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    color: white;
+}
+ .content h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+.content h1{
+font-weight: 500;
+font-size: 52px;
+margin: 34px;
+}
+.content p{
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 200;
+}
+.content button{    
+    width: 172px;
+    height: 35px;
+    border-radius: 50rem;
+    font-weight: 700;
+    color: white;
+    border-color: white;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 16px;
+    transition: all .5s ease-in-out;
+}
+.content button:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    header ul, li, a{
+        display: none;
+    }
+    header .logo{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        align-content: center;
+    }
+   #home{
+    max-width: 600px;
+   }
+}
+#about{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+#about .img{
+    width: 540px;
+    height: 350px;
+}
+#about .img img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.text {
+    display:flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    padding-left: 30px;
+}
+.text h2{
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.text h2 span{
+    font-weight: 700;
+}
+.text h4{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.text h4 span{
+    color: rgb(230, 95, 120);
+}
+.text p{
+    color: rgb(102, 107, 112);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+#services h2{
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 70px;
+    align-content: space-between;
+    align-items: center;
+    width: 90%;
+} 
+.do{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    outline: #dee2e6 1px solid;
+    border-radius: 0.25rem;
+    padding: 3rem;
+    font-weight: 200;
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.img{
+    font-size: 1em;
+    color: #e65f78;
+}
+.do h1{
+    padding-bottom: 10px;
+    font-size: 34px;
+    font-weight: 500;
+    color: rgb(33, 37, 41)
+
+}
+.line{
+    width: 7%;
+    background-color: rgb(230, 95, 120);
+    height: 2px;
+    transition: all .5s ease-in-out;
+}
+.cards p{
+    padding-top: 10px;
+
+}
+.do:hover .line{
+width: 23%;
+}
+#clients{
+    background-color: rgb(240, 240, 225);
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+#clients h1{
+    font-size: 27px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+#clients p , h3{
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.icon1{
+    display: flex;
+    flex-direction: row;
+    color: #e65f78;
+}
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: #dee2e6 1px solid;
+    padding: 4px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+ #clients span{
+color: #000;
+font-weight: 500;
+ }
+ .animated{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    animation-name: up;
+    animation-timing-function: ease;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    transform: translateX(-50%);
+    border-radius: 50rem;
+    border-width: 2px;
+    border-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.animated::before {
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    width: 3px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+}
+@keyframes up{
+    0%{bottom: 10%;}
+    25%{bottom: 11%;}
+    50%{bottom: 12%;}
+   75%{bottom: 13%;}
+   100%{bottom: 10%;}
+}
+.upp{
+    right: 2%;
+    bottom: 10%;
+    position: fixed;
+    background-color: #e65f78;
+    width: 28px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    }
+    #portfolio{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .textso{
+        color: rgb(33, 37, 41);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .textso p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .textso h1{
+        font-size: 27px;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 10px;
+    }
+    ol{
+        list-style: none;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ol li{
+        margin: 15px;
+        transition: all .5s ease;
+    }
+     ol li:hover{
+        background-color: #e65f78;
+        color: white;
+        border-radius: 30px;
+        padding: 5px;
+    }
+    .imgs{
+        width: 344px;
+        height: 244px;
+        overflow: hidden;  
+        transition: all 100ms linear;
+        float: left;
+        overflow: hidden;
+        margin: 10px;
+    }
+    .allhere{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+    .imgs img:hover{
+        transform:scale(1.2) ;
+        transition: 100ms;
+        filter: brightness(0.6);
+    }
+    .imgs img{
+        width: 100%;
+    float: left;
+    
+        height: 100%;
+    }
+    .layer h3{
+        font-size: 27px;
+    }
+    
+    
+    
+    .card1 , .card2 , .card3{
+        border: 1px solid rgba(0, 0, 0, .125);
+        width: 351px;
+        height: 450px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        }
+        .pladding{
+            padding: 10px;
+        }
+        #blog{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .imgcard{
+            width: 350px;
+            height: 244px;
+        }
+        .imgcard img{
+            width: 100%;
+            height: 100%;
+        }
+        .textcard{
+            padding-left: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .textcard h2{
+            font-size: 20px;
+            font-weight: 500;
+            color: rgb(33, 37, 41);
+        }
+        .textcard .spn1{
+            color: #6c757d;
+            font-weight: 400;
+        }
+        .spn2{
+            color: #e65f78;
+        }
+        .p1{
+            padding-top: 16px;
+           padding-bottom: 16px;
+        }
+        .textcard a {
+            font-weight: 700;
+           text-decoration: none;
+           color: #6c757d;
+        
+        }
+     #contact{
+        padding-top: 50px;
+     } 
+.downn .yourname,.yournumber{
+    width: 38.5%;
+    height: 28px;
+}
+ .paddingg h4{
+    visibility: hidden;
+}
+.youremail{
+    width: 80%;
+    height: 28px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+} 
+
+textarea{
+    width: 80%;
+    height: 50px;
+}
+.upi {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.upi i{
+    color: #e65f78;
+}
+.upi h2{
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: rgb(33, 37, 41);
+}
+.upi p{
+color: rgb(108, 117, 125);
+margin-bottom: 16px;
+font-size: 16px;
+line-height: 24px;
+}
+.downn{
+    width: 100%;
+    color: #ced4da;
+    border-color: #ced4da;
+    font-size: 20px;
+
+}
+input:focus, textarea:focus{
+    outline: 5px rgba(108, 178, 211, 0.63) solid;
+    border-radius:10px ;
+}
+.downi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.downii{
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.submit{
+    background-color: #e65f78;
+    color: white;
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 5px;
+    border-color: transparent;
+    display: flex;
+    margin-left:120px;
+    margin-top: 10px;
+}
+  
